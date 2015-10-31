@@ -1,0 +1,40 @@
+
+body {
+    margin: 0px;
+}
+#ad {
+    position: relative;
+    display: block;
+    border: rgb(145, 153, 153) 1px solid;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+}
+#clickthrough-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
