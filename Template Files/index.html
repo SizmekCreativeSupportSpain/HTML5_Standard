@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Standard Banner Workspace</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="adConfig.js"></script>
+    <script type="text/javascript" src="scripts/EBLoader.js"></script>
+    <script>
+        function startAd() {
+            var adDid = document.getElementById("ad");
+            adDid.style.width = adConfig.banner_width+"px";
+            adDid.style.height = adConfig.banner_height+"px";
+
+            document.getElementById("clickthrough-button").addEventListener("click", clickthrough);
+        }
+
+        function clickthrough() {
+            EB.clickthrough();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="ad">
+        <div id="banner">
+            <button id="clickthrough-button" class="button"></button>
+            <img src="images/backup.jpg" alt="bgImage" />
+        </div>
+    </div>
+</body>
+
+</html>
