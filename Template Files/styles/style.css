@@ -5,7 +5,6 @@ body {
 #ad {
     position: relative;
     display: block;
-    border: rgb(145, 153, 153) 1px solid;
     overflow: hidden;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
