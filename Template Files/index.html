@@ -7,10 +7,10 @@
     <title>HTML5 Standard Banner Workspace</title>
     <link rel="stylesheet" href="styles/style.css" />
     <script type="text/javascript" src="adConfig.js"></script>
-    <script type="text/javascript" src="scripts/EBLoader.js"></script>
+    <script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
     <script>
         function startAd() {
-            var adDid = document.getElementById("ad");
+            var adDid = document.getElementById("banner");
             adDid.style.width = adConfig.banner_width+"px";
             adDid.style.height = adConfig.banner_height+"px";
 
@@ -24,11 +24,9 @@
 </head>
 
 <body>
-    <div id="ad">
-        <div id="banner">
-            <button id="clickthrough-button" class="button"></button>
-            <img src="images/backup.jpg" alt="bgImage" />
-        </div>
+    <div id="banner">
+        <button id="clickthrough-button" class="button"></button>
+        <img src="images/backup.jpg" alt="bgImage" />
     </div>
 </body>
 
