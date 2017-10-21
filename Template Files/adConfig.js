@@ -5,14 +5,10 @@ var adConfig = {
 
 ////////Funciones comunes, NO ELIMINAR!!!!!!!!////////////////////
 
-function initEB() {
-	if (!EB.isInitialized()) {
-		EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
-	} else {
-		startAd();
-	}
+function checkIfAdKitReady(event) {
+	adkit.onReady(startAd);
 }
 
+window.addEventListener("load", checkIfAdKitReady);
 
-window.addEventListener("load", initEB);
 ///////////////////////////////////////////////////////////////////
