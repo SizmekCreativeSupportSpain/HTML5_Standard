@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML5 Standard Banner Workspace</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="adConfig.js"></script>
     <script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
     <script>
@@ -15,6 +15,7 @@
             adDid.style.height = adConfig.banner_height+"px";
 
             document.getElementById("clickthrough-button").addEventListener("click", clickthrough);
+            
             var rnd = Math.floor(Math.random()*900000) + 100000;
             var img = new Image();
             img.src = 'https://bs.serving-sys.com/Serving/adServer.bs?cn=display&c=19&pli=1074206609&adid=1074746111&ord='+rnd;
